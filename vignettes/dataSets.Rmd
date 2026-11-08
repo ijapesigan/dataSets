@@ -1,0 +1,44 @@
+---
+title: "dataSets: Data Sets"
+author: "Ivan Jacob Agaloos Pesigan"
+output: rmarkdown::html_vignette
+bibliography: "vignettes.bib"
+csl: https://raw.githubusercontent.com/citation-style-language/styles/master/apa.csl
+nocite: |
+  @RCoreTeam-2026
+vignette: >
+  %\VignetteIndexEntry{dataSets: Data Sets}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r}
+#| include = FALSE
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+## Description
+
+Data sets used in the examples and tests of other projects
+in R [@RCoreTeam-2026].
+
+## Installation
+
+You can install the development version of `dataSets` from
+[GitHub](https://github.com/ijapesigan/dataSets) with:
+
+```r
+if (!require("pak")) install.packages("pak")
+pak::pkg_install("ijapesigan/dataSets")
+```
+
+## Data Sets
+
+```{r}
+utils::data(package = "dataSets")$results[, c("Item", "Title")]
+```
+
+## References

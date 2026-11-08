@@ -1,0 +1,16 @@
+destination: pkgdown
+url: https://ijapesigan.github.io/dataSets/
+
+template:
+  package: rProject
+
+articles:
+- title: Getting Started
+  contents:
+  - dataSets
+- title: Data Sets
+  contents:
+  - nas1982
+- title: Session Information
+  contents:
+  - session
