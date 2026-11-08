@@ -1,0 +1,41 @@
+---
+title: "dataSets: nas1982"
+author: "Ivan Jacob Agaloos Pesigan"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{dataSets: nas1982}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r}
+#| include = FALSE
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r}
+library(package = "dataSets")
+utils::data(list = "nas1982", package = "dataSets")
+```
+
+## Summary
+
+```{r}
+summary(object = nas1982)
+```
+
+## Means and Covariances
+
+```{r}
+colMeans(x = nas1982, na.rm = TRUE)
+stats::var(x = nas1982, na.rm = TRUE)
+```
+
+## Scatter Plot Matrix
+
+```{r}
+graphics::pairs(x = nas1982)
+```
