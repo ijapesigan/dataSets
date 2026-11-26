@@ -1,6 +1,7 @@
 ---
 title: "dataSets: Session"
 author: "Ivan Jacob Agaloos Pesigan"
+date: "`r format(Sys.time(), '%Y-%m-%d %H:%M:%S', tz = 'UTC')` UTC"
 output: rmarkdown::html_vignette
 vignette: >
   %\VignetteIndexEntry{dataSets: Session}
